@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "screenshots_enabled": true
+  },
+  "rules": [
+    {
+      "patterns": [
+        ".*"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/web",
+        "fallback_uri": "turbo://fragment/web",
+        "pull_to_refresh_enabled": true
+      }
+    }
+  ]
+}
