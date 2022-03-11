@@ -2,6 +2,7 @@ package com.tighten.turboram
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.webkit.WebView
 import androidx.fragment.app.Fragment
 import dev.hotwire.turbo.config.TurboPathConfiguration
 import dev.hotwire.turbo.session.TurboSessionNavHostFragment
@@ -27,6 +28,19 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
     override val pathConfigurationLocation: TurboPathConfiguration.Location
         get() = TurboPathConfiguration.Location(
             assetFilePath = "json/configuration.json",
-            remoteFileUrl = "https://turbo.hotwired.dev/demo/configurations/android-v1.json"
         )
+
+    override fun onSessionCreated() {
+        super.onSessionCreated()
+        session.webView.settings.userAgentString = customUserAgent(session.webView)
+
+        if (BuildConfig.DEBUG) {
+            session.setDebugLoggingEnabled(true)
+            WebView.setWebContentsDebuggingEnabled(true)
+        }
+    }
+
+    private fun customUserAgent(webView: WebView): String {
+        return "Turbo Native Android ${webView.settings.userAgentString}"
+    }
 }
