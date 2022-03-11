@@ -10,7 +10,7 @@ import kotlin.reflect.KClass
 class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
     override val sessionName = "main"
 
-    override val startLocation = "https://turbo-native-demo.glitch.me/"
+    override val startLocation = HOME_URL
 
     override val registeredActivities: List<KClass<out AppCompatActivity>>
         get() = listOf(
