@@ -24,6 +24,17 @@
         "fallback_uri": "turbo://fragment/web",
         "pull_to_refresh_enabled": true
       }
+    },
+    {
+      "patterns": [
+        "/posts/[0-9]+$"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/posts/show",
+        "fallback_uri": "turbo://fragment/web",
+        "pull_to_refresh_enabled": true
+      }
     }
   ]
 }

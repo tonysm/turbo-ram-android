@@ -24,6 +24,7 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
         get() = listOf(
             WebFragment::class,
             PostsHomeFragment::class,
+            ShowBlogPostFragment::class,
             // And any other TurboFragments in your app
         )
 
