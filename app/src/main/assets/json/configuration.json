@@ -13,6 +13,17 @@
         "fallback_uri": "turbo://fragment/web",
         "pull_to_refresh_enabled": true
       }
+    },
+    {
+      "patterns": [
+        "/posts$"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/posts/index",
+        "fallback_uri": "turbo://fragment/web",
+        "pull_to_refresh_enabled": true
+      }
     }
   ]
 }
