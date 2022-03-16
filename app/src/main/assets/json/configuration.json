@@ -16,11 +16,12 @@
     },
     {
       "patterns": [
+        "/dashboard$",
         "/posts$"
       ],
       "properties": {
         "context": "default",
-        "uri": "turbo://fragment/posts/index",
+        "uri": "turbo://fragment/web/home",
         "fallback_uri": "turbo://fragment/web",
         "pull_to_refresh_enabled": true
       }
@@ -39,7 +40,8 @@
     {
       "patterns": [
         "/create$",
-        "/edit$"
+        "/edit$",
+        "/login$"
       ],
       "properties": {
         "context": "default",
