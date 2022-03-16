@@ -35,6 +35,18 @@
         "fallback_uri": "turbo://fragment/web",
         "pull_to_refresh_enabled": true
       }
+    },
+    {
+      "patterns": [
+        "/create$",
+        "/edit$"
+      ],
+      "properties": {
+        "context": "default",
+        "uri": "turbo://fragment/web/modal",
+        "fallback_uri": "turbo://fragment/web",
+        "pull_to_refresh_enabled": true
+      }
     }
   ]
 }

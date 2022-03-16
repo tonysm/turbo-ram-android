@@ -25,6 +25,7 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
             WebFragment::class,
             PostsHomeFragment::class,
             ShowBlogPostFragment::class,
+            WebModalFragment::class,
             // And any other TurboFragments in your app
         )
 
