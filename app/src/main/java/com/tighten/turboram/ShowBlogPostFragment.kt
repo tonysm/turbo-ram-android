@@ -20,6 +20,10 @@ class ShowBlogPostFragment: WebFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        initCommentButton()
+    }
+
+    private fun initCommentButton() {
         newCommentButton()?.setOnClickListener {
             navigateToCreateComment()
         }
