@@ -9,6 +9,8 @@ class MainActivity : AppCompatActivity(), TurboActivity {
     override lateinit var delegate: TurboActivityDelegate
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        supportActionBar?.hide()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
